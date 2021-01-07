@@ -17,7 +17,7 @@ path planner which also avoids dynamic obstacles.
 
 ## Table of Contents
 - [Built With](#built-with)
-- [turtlebot3_navigation](#turtlebot3_Navigation-package)
+- [Turtlebot3 navigation](#Turtlebot3 Navigation-package)
 ---
 
 ## Built With
