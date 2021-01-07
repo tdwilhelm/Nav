@@ -17,9 +17,9 @@ path planner which also avoids dynamic obstacles.
 
 ## Table of Contents
 - [Built With](#built-with)
-- [Ball Chaser Package](#ball-chaser-package)
-  - [Drive Bot Node](#drive-bot-node)
-  - [Process Image Node](#process-image-node)
+- [turtlebot3_navigation](#turtlebot3_Navigation-package)
+  - [map_server](#map_server-node)
+  - [rviz](#rviz-node)
 
 ---
 
@@ -51,16 +51,16 @@ Then select the 2D Nav Goal menu button and select the target location for the r
 
 ```
 
-## Ball Chaser Package
+## turtlebot3_Navigation-package
 
 Within the *ball_chaser* ROS package the captured image is analyzed to determine the position of the white ball. Then it commands the robot to orientate towards the ball and drive forward. Therefore the nodes inside the *ball chaser* package need to communicate with the central robot package and subscribe to the robot camera sensor and publish to the robot's joint wheels.
 
-### Drive Bot Node
+### map_server Node
 
 Inside the *ball_chaser* package the drive bot node is created, providing a service method to drive the robot around by setting its linear x and angular z velocities. The service server publishes messages containing the velocities for the wheel joints.
 
 
-### Process Image Node
+### RVIZ Node
 
 The second required node inside the *ball_chaser* package is the process image node. This client node will subscribe to the robot’s camera images and analyze them to determine the position of the optical colour key, a white ball. Once the ball position is determined, the client node requests a service from the drive_bot server node to drive the robot toward the ball. The robot can drive either left, right or forward, depending on the robot position inside the image.
 
