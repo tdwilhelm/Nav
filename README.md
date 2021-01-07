@@ -40,13 +40,14 @@ source devel/setup.bash
 Next, the robot is started inside the gazebo world, and the visualization program RVIZ is opened.
 
 ```
-roslaunch my_robot myworld.launch
+roslaunch turtlebot3_gazebo turtlebot3_house.launch
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/ros/ros_map/tb3_house_map.yaml
+ 
 ```
 
-If the two programmes have opened up, the ball can be moved around and positioned in front of the robot. Next, the ball chaser package can be started.
+If the Gazebo and RVIZ opened up, set location of robot using 2D-Nav button in RVIZ. This is necessary because RVIZ doesn't know where the robot is located.
+Wit the inital pose set, select the 
 
-```
-roslaunch ball_chaser ball_chaser.launch
 ```
 
 ## Ball Chaser Package
