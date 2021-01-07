@@ -45,8 +45,9 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/ros
  
 ```
 
-If the Gazebo and RVIZ opened up, set location of robot using 2D-Nav button in RVIZ. This is necessary because RVIZ doesn't know where the robot is located.
-Wit the inital pose set, select the 
+If the Gazebo and RVIZ opened up, set location of robot by selecting 2D-Pose Estimate menu button in RVIZ. Set the the Pose Estimate by moving the cursor in RVIZ to the same location in the Gazebo map. This is necessary because RVIZ doesn't know where the robot is located. 
+
+Then select the 2D Nav Goal menu button and select the target location for the robot.  The Global Planner and Local planner will calculate the path for the robot to follow.
 
 ```
 
