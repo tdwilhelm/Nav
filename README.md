@@ -14,7 +14,7 @@ Robot map based navigation answers the following questions:
   
 --How do I get there? **Motion planning or path planning:** to plan a path, the target position must be well-defined to the robot, which require an appropriate addressing scheme that the robot can understand
 
-For the navigation, there are two types of planners. The Global Planner and Local Planner. Global Planner will determine a clear path to the target location. The Local planner will execute the path of the Global Planner but will also handle dynamic obstacles.
+For navigation, there are two types of planners. The Global Planner and Local Planner. Global Planner will determine a clear path to the target location. The Local planner will execute the path of the Global Planner but will also handle dynamic obstacles.
 
 To show this simulation in Gazebo and Rviz, select the 2D nav goal button in RVIZ, in order to define a good location for the robot. For example I want the robot to move to this location and you can see that the robot first plans a static obstacle free path which we call the global path planning and then executes the path using its local path planner which also avoids dynamic obstacles.
 
