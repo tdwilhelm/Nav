@@ -7,18 +7,16 @@
 > We just need to send a good location to the robot and the navigation stack will make the robot navigate to it while avoiding obstacles.
 
 Robot map based navigation answers the following questions:
-
+<p>
 Where am I
-    **Localization:** it helps the robot know where it is
+    Localization: it helps the robot know where it is
 
 Where am I going
-<p>
     Mapping: the robot needs to have a map of its environment to be able to recognize where he has been moving around so far 
- </p>   
-
+  
 How do I get there
     **Motion planning or path planning:** to plan a path, the target position must be well-defined to the robot, which require an appropriate addressing scheme that the robot can understand
-
+</p>
 To do this there are two types of planners. The Global Planner and Local Planner. Global Planner will determine a clear path to the target location. The Local planner will execute the path of the Global Planner but will also handle dynamic obstacles.
 
 To show this simulation in Gazebo and Rviz, select the 2D nav goal button in RVIZ, in order to define a good location for the robot. For example I want the robot to move to this location and you can see that the robot first plans a static obstacle free path which we call the global path planning and then executes the path using its local path planner which also avoids dynamic obstacles.
