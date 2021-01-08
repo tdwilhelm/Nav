@@ -8,8 +8,8 @@
 
 Robot map based navigation answers the following questions:
 
---Where am I? 
-    --**Localization:** it helps the robot know where it is
+--Where am I? /n
+    **Localization:** it helps the robot know where it is
 
 --Where am I going
     --**Mapping:** the robot needs to have a map of its environment to be able to recognize where he has been moving around so far 
