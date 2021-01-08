@@ -49,7 +49,7 @@ Then select the 2D Nav Goal menu button and select the target location for the r
 
 ## turtlebot3_Navigation-package
 
-Navigation is to move the robot from one location to the specified destination in a given environment. For this purpose, a map that contains geometry information of furniture, objects, and walls of the given environment is required. The map was created with the distance information obtained by the sensor and the pose information of the robot itself.
+One of The TurtleBot3’s core technology is SLAM, **Navigation** and Manipulation. Navigation allows to move the robot from one location to the specified destination in a given environment. For this purpose, a map that contains geometry information of furniture, objects, and walls of the given environment is required. The map was created with the distance information obtained by the sensor and the pose information of the robot itself.
 
 The Navigation enables a robot to move from the current pose to the designated goal pose on the map by using the map, robot’s encoder, IMU sensor, and distance sensor. The procedure for performing this task is as follows.
 
