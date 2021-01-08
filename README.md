@@ -8,7 +8,7 @@
 
 Robot map based navigation answers the following questions:
 
---Where am I? /n
+--Where am I? \n
     **Localization:** it helps the robot know where it is
 
 --Where am I going
